@@ -1,9 +1,7 @@
 # Arc Boost Marketplace
 
 This is the [Unofficial Marketplace](https://arcboost-marketplace.vercel.app/) for Arc Boosts.
-
-![CleanShot 2022-07-09 at 4 36 18](https://user-images.githubusercontent.com/45521157/178108182-830d795c-1ba7-4a39-8201-6892d7400236.png)
-
+![178108182-830d795c-1ba7-4a39-8201-6892d7400236 1](https://user-images.githubusercontent.com/45521157/178108354-f6d91847-65ac-4598-8258-69aec622512d.png)
 
 1. [Contributing](#contributing)
 2. [Running](#running)
@@ -23,7 +21,7 @@ Grab your boost (extension) from Arc. There are two main ways to do that:
 
 1. From the Boost editor
 > Click on the title or settings icon on the top-left, and then click `Open in Finder` in the modal
-![CleanShot 2022-07-09 at 4 14 18](https://user-images.githubusercontent.com/45521157/178107343-6f12ec7a-5cf1-49c0-a234-bf4b1450d613.png)
+![178107343-6f12ec7a-5cf1-49c0-a234-bf4b1450d613 2](https://user-images.githubusercontent.com/45521157/178108357-7357642e-26c7-4a78-b18c-9d189d598980.png)
 
 2. From the extensions tab
 > Menu Bar -> Extensions -> Manage Extensions -> Click on your extensions' details -> Source
