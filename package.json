@@ -85,11 +85,13 @@
     "next-themes": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-use": "^17.4.0"
+    "react-use": "^17.4.0",
+    "title": "^3.4.4"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
     "@types/react": "^18.0.15",
+    "@types/title": "^3.4.1",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
     "autoprefixer": "^10.4.7",

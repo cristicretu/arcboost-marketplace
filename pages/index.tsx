@@ -2,6 +2,7 @@ import { promises as fs } from 'fs'
 import path from 'path'
 
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import title from 'title'
 
 import BoostsView from 'components/BoostsView'
 import Container from 'components/Container'
@@ -36,11 +37,13 @@ export const getStaticProps: GetStaticProps = async function () {
   const boosts = filenames.map(async filename => {
     const filepath = path.join(boostDirectory, filename)
     const manifest = await fs.readFile(filepath, 'utf8')
-    const id = filename.replace('.json', '')
+    let name = filename.replace('.json', '')
+    name = name.replace('-', ' ')
+    name = title(name)
 
     // add the id to the manifest as a object property
     const manifestObject: Boost = JSON.parse(manifest)
-    manifestObject.id = id
+    manifestObject.name = name
     manifestObject.website = manifestObject.website.substring(
       0,
       manifestObject.website.lastIndexOf('.')

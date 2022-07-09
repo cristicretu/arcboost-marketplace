@@ -5,12 +5,8 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": [
-        "*://*.facebook.com/*"
-      ],
-      "css": [
-        "styles.css"
-      ]
+      "matches": ["*://*.facebook.com/*"],
+      "css": ["styles.css"]
     }
   ],
   "permissions": []

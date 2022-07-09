@@ -3,23 +3,24 @@
 */
 
 body {
-  background-color: #C0C0C0 !important;
+  background-color: #c0c0c0 !important;
 }
 
 #repository-container-header {
-  background-color: #C0C0C0 !important;
+  background-color: #c0c0c0 !important;
   border-bottom: 1px solid #808080;
 }
 
 header {
-    background: linear-gradient(to right, #01057D, #397BC6) !important;
+  background: linear-gradient(to right, #01057d, #397bc6) !important;
 }
-.BtnGroup, notifications-list-subscription-form {
+.BtnGroup,
+notifications-list-subscription-form {
   border-radius: 0 !important;
   border: 1px solid black !important;
   border-right-width: 2px !important;
   border-bottom-width: 2px !important;
-  background-color: #C0C0C0;
+  background-color: #c0c0c0;
   box-shadow: inset 2px 2px 0 white, inset -1px -1px 0 gray;
 }
 .btn {
@@ -27,7 +28,9 @@ header {
   border: 0px solid transparent !important;
   box-shadow: none !important;
 }
-.Box, #readme, .avatar {
+.Box,
+#readme,
+.avatar {
   border-radius: 0px !important;
   border: 1px solid black !important;
   border-right-width: 2px !important;
@@ -35,7 +38,8 @@ header {
   background-color: white;
   box-shadow: inset 2px 2px 0 white, inset -1px -1px 0 gray;
 }
-.Box-header, .Box-footer {
+.Box-header,
+.Box-footer {
   background-color: transparent !important;
   border: none !important;
   border-radius: 0 !important;
@@ -45,9 +49,9 @@ header {
 }
 
 .header-search {
-    border: 2px solid black;
-    border-bottom-color: #c0c0c0;
-    border-right-color: #c0c0c0;
+  border: 2px solid black;
+  border-bottom-color: #c0c0c0;
+  border-right-color: #c0c0c0;
 }
 .header-search .form-control {
   background-color: white !important;
