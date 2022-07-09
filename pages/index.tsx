@@ -1,35 +1,15 @@
 import { promises as fs } from 'fs'
 import path from 'path'
 
-import { useEffect } from 'react'
-
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 
-import Card from 'components/BoostCard'
+import BoostsView from 'components/BoostsView'
 import Container from 'components/Container'
 import { Boost } from 'lib/types'
-import cn from 'lib/classNames'
-import React from 'react'
 
 export default function Home({
   boosts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const inputRef = React.useRef<HTMLInputElement>(null)
-
-  useEffect(() => {
-    const handler = (event: {
-      key: string
-      preventDefault: () => void
-      metaKey: boolean
-    }) => {
-      if (event.key === 'k' && event.metaKey) {
-        event.preventDefault()
-      }
-    }
-    window.addEventListener('keydown', handler)
-    return () => window.removeEventListener('keydown', handler)
-  })
-
   return (
     <Container>
       <header className='flex flex-col items-center'>
@@ -40,27 +20,7 @@ export default function Home({
           for Arc Boosts
         </h2>
       </header>
-
-      <div className='flex'>
-        {/* sidebar */}
-        <div className='flex flex-col flex-shrink-0 sticky mr-8'>
-          <form
-            className='rounded-md my-2'
-            onSubmit={event => {
-              event.preventDefault()
-            }}
-          >
-            <div>search</div>
-            <input type="text" className={cn()} placeholder="Search for boosts..." ref={inputRef} onChange=(event) => { search(e.target.value)} />
-            <div className="hidden md:flex absolute inset-y-0 right-0 py-1.5 pr-1.5 pointer-events-none">
-            <kbd>⌘K</kbd>
-          </div>
-          </form>
-        </div>
-
-        {/* cards */}
-        <div></div>
-      </div>
+      <BoostsView boosts={boosts} />
     </Container>
   )
 }
