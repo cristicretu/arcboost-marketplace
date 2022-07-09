@@ -1,8 +1,8 @@
 {
-  "name": "Twitter Visit Counter",
-  "description": "A simple Twitter visit counter.",
+  "name": "Twitter Untrending",
+  "description": "It removes the Trending sidebar on Twitter, and replaces it with a little bit of text gently reminding you how many times you’ve visited the website today.",
   "author": "@nateparrot",
-  "version": "1.0",
+  "version": "0.1",
   "image": "https://user-images.githubusercontent.com/45521157/166933089-441716ef-6030-448e-883c-1b7861f66877.png",
   "website": "twitter.com"
 }
