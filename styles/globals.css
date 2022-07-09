@@ -194,6 +194,10 @@
     backdrop-filter: saturate(180%) blur(25px);
   }
 
+  .filter-blur-small {
+    backdrop-filter: saturate(180%) blur(5px);
+  }
+
   .highlight-link-hover {
     @apply -mx-0.5 rounded-sm bg-opacity-20 px-0.5 text-gray-1000 no-underline dark:bg-opacity-100 dark:text-gray-300 md:hover:bg-yellow-400 md:hover:bg-opacity-30 md:dark:hover:bg-yellow-500 md:dark:hover:bg-opacity-100 md:dark:hover:text-gray-1000;
   }
