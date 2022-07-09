@@ -26,12 +26,13 @@ Grab your boost (extension) from Arc. There are two main ways to do that:
 2. From the extensions tab
 > Menu Bar -> Extensions -> Manage Extensions -> Click on your extensions' details -> Source
 
-Now switch to your branch and add the whole folder you just got into the `data/extensions` folder.
+Afterwards, ZIP the folder (Right Click -> Compress).
+Now switch to your branch and add the whole zip file you just got into the `public/extensions` folder.
 
 ### Step 2
 
 Create a manifest JSON file for your extension. This will be used for preview purposes on the main website.
-Get the template from [here](), and then fill our all the properties.
+Get the template from [here](https://github.com/cristicretu/arcboost-marketplace/blob/main/template.json), and then fill our all the properties.
 For the image, either paste it into the PR or somewhere else into GitHub, but *make sure* that the image link is `https://user-images.githubusercontent.com/...`. (i.e hosted on GitHub)
 
 Now change the name of this file into the name of your boost. This will be used in the website. (i.e retro-github -> Retro Github)
