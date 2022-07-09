@@ -1,0 +1,17 @@
+{
+  "name": "Minimal Facebook",
+  "description": "Remove the clutter",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.facebook.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ],
+  "permissions": []
+}
