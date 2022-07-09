@@ -5,7 +5,6 @@ import { useRouter } from 'next/dist/client/router'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Footer from 'components/Footer/Footer'
 import cn from 'lib/classNames'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -17,8 +16,8 @@ export default function Container(props: any) {
   const router = useRouter()
 
   const meta = {
-    title: 'Template name',
-    description: 'Template description',
+    title: 'Arc Boost Marketplace',
+    description: 'The unofficial Arc Boost Marketplace',
     image:
       'https://cdn.discordapp.com/attachments/797485737272541250/893912493255176192/UnicornVectorGradient_7.png',
     type: 'website',
@@ -43,11 +42,11 @@ export default function Container(props: any) {
           <meta name='robots' content='follow, index' />
           <meta
             property='og:url'
-            content={`https://template.cretu.dev/${router.asPath}`}
+            content={`https://arcextensions.cretu.dev/${router.asPath}`}
           />
           <link
             rel='canonical'
-            href={`https://template.cretu.dev/${router.asPath}`}
+            href={`https://arcextensions.cretu.dev/${router.asPath}`}
           />
           <meta property='og:type' content={meta.type} />
           <meta property='og:site_name' content='Cristian Crețu' />
@@ -137,9 +136,6 @@ export default function Container(props: any) {
           )}
         >
           <div className='flex flex-col gap-2'>{children}</div>
-          <footer>
-            <Footer />
-          </footer>
         </main>
       </div>
     </>

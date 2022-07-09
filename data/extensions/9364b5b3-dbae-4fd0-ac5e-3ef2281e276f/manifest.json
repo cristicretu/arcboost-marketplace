@@ -1,0 +1,13 @@
+{
+  "name": "My extensions Style Boost",
+  "description": "",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://*.extensions/*"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": []
+}
