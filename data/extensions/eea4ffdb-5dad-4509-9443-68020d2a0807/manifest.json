@@ -1,0 +1,17 @@
+{
+  "name": "Retro-Github",
+  "description": "Giving GitHub a retro theme ",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.github.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ],
+  "permissions": []
+}
