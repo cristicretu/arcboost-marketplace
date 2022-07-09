@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-import { Boost } from 'lib/types'
 import DownloadIcon from 'components/DownloadIcon'
+import { Boost } from 'lib/types'
 
 export default function Card({
   name,

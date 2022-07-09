@@ -19,7 +19,7 @@ export default function Container(props: any) {
     title: 'Arc Boost Marketplace',
     description: 'The unofficial Arc Boost Marketplace',
     image:
-      'https://cdn.discordapp.com/attachments/797485737272541250/893912493255176192/UnicornVectorGradient_7.png',
+      'https://user-images.githubusercontent.com/45521157/178108354-f6d91847-65ac-4598-8258-69aec622512d.png',
     type: 'website',
     ...customMeta,
   }
@@ -43,11 +43,11 @@ export default function Container(props: any) {
           <meta name='robots' content='follow, index' />
           <meta
             property='og:url'
-            content={`https://arcextensions.cretu.dev/${router.asPath}`}
+            content={`https://arcboost-marketplace.vercel.app/${router.asPath}`}
           />
           <link
             rel='canonical'
-            href={`https://arcextensions.cretu.dev/${router.asPath}`}
+            href={`https://arcboost-marketplace.vercel.app/${router.asPath}`}
           />
           <meta property='og:type' content={meta.type} />
           <meta property='og:site_name' content='Cristian Crețu' />
