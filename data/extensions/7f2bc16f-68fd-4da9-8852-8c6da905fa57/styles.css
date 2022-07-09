@@ -1,0 +1,8 @@
+/* We used Inspect Element to figure out
+   the names of the elements we want to hide */
+div[role='complementary'] {
+  display: none;
+}
+div[role='navigation'] {
+  display: none;
+}
