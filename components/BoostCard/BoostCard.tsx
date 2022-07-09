@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { Boost } from 'lib/types'
+import DownloadIcon from 'components/DownloadIcon'
 
 export default function Card({
   name,
@@ -27,10 +28,11 @@ export default function Card({
         />
       </div>
       <div className='p-2 flex flex-col gap-1'>
-        <p className='font-semibold text-lg text-primary'>
+        <p className='font-semibold text-lg text-primary flex items-center'>
           {name}
           <span className='ml-2 invisible group-hover:visible transition-opacity'>
-            ↗
+            {/* ↗ */}
+            <DownloadIcon />
           </span>
         </p>
         <p className='text-secondary  truncate'>{description}</p>
