@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 
+import splitbee from '@splitbee/web'
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/dist/client/router'
 import Head from 'next/head'
 import Link from 'next/link'
-import splitbee from '@splitbee/web'
 
 import cn from 'lib/classNames'
 
