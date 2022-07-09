@@ -5,6 +5,7 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 import BoostsView from 'components/BoostsView'
 import Container from 'components/Container'
+import Footer from 'components/Footer'
 import { Boost } from 'lib/types'
 
 export default function Home({
@@ -22,6 +23,7 @@ export default function Home({
           </h2>
         </header>
         <BoostsView boosts={boosts} />
+        <Footer />
       </div>
     </Container>
   )

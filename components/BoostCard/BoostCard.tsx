@@ -32,7 +32,7 @@ export default function Card({
             ↗
           </span>
         </p>
-        <p className='text-secondary'>{description}</p>
+        <p className='text-secondary  truncate'>{description}</p>
         <div className='flex items-center text-sm text-tertiary justify-between'>
           <p>by {author}</p>
           <p>v{version}</p>
