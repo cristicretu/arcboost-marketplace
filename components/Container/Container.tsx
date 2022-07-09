@@ -67,13 +67,13 @@ export default function Container(props: any) {
           <div className='flex flex-row gap-1 text-tertiary'>
             <Link href='/'>
               <a className='hover:text-primary transition-all cursor-pointer'>
-                Home
+                Marketplace
               </a>
             </Link>
           </div>
           <div className='flex flex-row items-center space-x-4'>
             <a
-              href='https://github.com/cristicretu/'
+              href='https://github.com/cristicretu/arcboost-marketplace'
               className='visible'
               target='_blank'
               rel='noreferrer'
@@ -128,10 +128,8 @@ export default function Container(props: any) {
         <main
           className={cn(
             'px-4 mt-20',
-            'max-w-2xl',
+            'max-w-7xl',
             'mx-auto my-auto',
-            'flex flex-col justify-center gap-12',
-            'divide-y divide-gray-300 dark:divide-gray-700',
             'rounded-lg'
           )}
         >
