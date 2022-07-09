@@ -4,8 +4,9 @@ This is the [Unofficial Marketplace](https://arcboost-marketplace.vercel.app/) f
 ![178108182-830d795c-1ba7-4a39-8201-6892d7400236 1](https://user-images.githubusercontent.com/45521157/178108354-f6d91847-65ac-4598-8258-69aec622512d.png)
 
 1. [Contributing](#contributing)
-2. [Running](#running)
-3. [License](#license)
+2. [Downloading](#downloading)
+3. [Running](#running)
+4. [License](#license)
 
 ## Contributing
 
@@ -40,6 +41,12 @@ Now change the name of this file into the name of your boost. This will be used 
 ### Step 3 
 
 Submit the PR
+
+## Downloading
+
+Just press on a card and it will be automatically downloaded. Unzip the file and add it into your path `/Users/*/Library/Applications/Arc/boosts/`, and you're done ✨
+
+If you have any issues, make sure the extension is enabled throught the `Manage extensions` page. 
 
 ## Running
 
