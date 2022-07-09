@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 import Card from 'components/BoostCard'
 import SearchIcon from 'components/SearchIcon'
@@ -12,6 +12,8 @@ interface BoostsViewProps {
 export default function BoostsView({ boosts }: BoostsViewProps) {
   const [filteredBoosts, setFilteredBoosts] = useState<Boost[]>(boosts)
   const [input, setInput] = useState<string>('')
+
+  const inputRef = useRef<HTMLInputElement>(null)
 
   const searchResults = useMemo(() => {
     const filteredResults: Boost[] = filteredBoosts.filter(result =>
@@ -33,6 +35,7 @@ export default function BoostsView({ boosts }: BoostsViewProps) {
     }) => {
       if (event.key === 'k' && event.metaKey) {
         event.preventDefault()
+        inputRef.current?.focus()
       }
     }
     window.addEventListener('keydown', handler)
@@ -52,12 +55,12 @@ export default function BoostsView({ boosts }: BoostsViewProps) {
           <input
             type='text'
             value={input}
-            // className={cn()}
-            // className='block w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100'
+            ref={inputRef}
             className={cn(
               'bg-gray-50 dark:bg-gray-800 text-primary block w-full pl-10 py-2 text-sm rounded-md',
               'border border-gray-200 dark:border-gray-700',
-              'pr-0 md:pr-12'
+              'pr-0 md:pr-12',
+              'focus:outline  focus:ring-blue-300 dark:focus:ring-blue-700 focus:ring-4 focus:outline-2 focus:outline-blue-500'
             )}
             placeholder='Search for boosts...'
             aria-label='Search for boosts'
@@ -77,6 +80,8 @@ export default function BoostsView({ boosts }: BoostsViewProps) {
         {searchResults.map(boost => (
           <Card key={boost.id} {...boost} />
         ))}
+
+        {!searchResults.length && <p className='w-96'>No boosts found.</p>}
       </div>
     </div>
   )
