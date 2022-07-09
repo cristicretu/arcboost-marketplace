@@ -23,6 +23,10 @@ export default function BoostsView({ boosts }: BoostsViewProps) {
     return filteredResults
   }, [filteredBoosts, input])
 
+  const categories = useMemo(() => {
+    return [...new Set(searchResults.map(boost => boost.website))]
+  }, [searchResults])
+
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInput(event.target.value)
   }
@@ -73,6 +77,13 @@ export default function BoostsView({ boosts }: BoostsViewProps) {
           </div>
         </form>
         <h3 className='font-semibold'>Websites</h3>
+        <div className='flex flex-col gap-2 mt-4'>
+          {categories.map(category => (
+            <a href={`#${category}`} key={category}>
+              {category}
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* cards */}

@@ -6,4 +6,5 @@ export interface Boost {
   version: number
   github: string
   image: string
+  website: string
 }
