@@ -4,7 +4,6 @@ export interface Boost {
   description: string
   author: string
   version: number
-  github: string
   image: string
   website: string
 }

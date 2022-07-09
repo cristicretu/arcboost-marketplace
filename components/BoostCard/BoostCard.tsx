@@ -8,9 +8,9 @@ export default function Card({
   author,
   version,
   image,
-  github,
   id,
 }: Boost): JSX.Element {
+  const github = `https://github.com/cristicretu/arcboost-marketplace/tree/main/data/extensions/${id}`
   return (
     <div
       onClick={() => window.open(github, '_blank')}
@@ -33,7 +33,10 @@ export default function Card({
           </span>
         </p>
         <p className='text-secondary'>{description}</p>
-        <p className='text-sm text-tertiary'>by {author}</p>
+        <div className='flex items-center text-sm text-tertiary justify-between'>
+          <p>by {author}</p>
+          <p>v{version}</p>
+        </div>
       </div>
     </div>
   )
