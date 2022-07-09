@@ -68,9 +68,9 @@ export default function BoostsView({ boosts }: BoostsViewProps) {
 
       {/* cards */}
       <div>
-        {filteredBoosts.map(boost => (
+        {/* {filteredBoosts.map(boost => (
           <Card key={boost.id} {...boost} />
-        ))}
+        ))} */}
       </div>
     </div>
   )

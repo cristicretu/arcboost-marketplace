@@ -32,6 +32,7 @@ export default function Container(props: any) {
     <>
       <div
         className={cn(
+          'bg-dots',
           'text-primary',
           'relative h-full min-h-screen w-full',
           'flex flex-col',
