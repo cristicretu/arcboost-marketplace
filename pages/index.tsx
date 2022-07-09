@@ -31,7 +31,7 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps = async function () {
-  const boostDirectory = path.join(process.cwd(), 'data/manifest')
+  const boostDirectory = path.join(process.cwd(), 'data')
   const filenames = await fs.readdir(boostDirectory)
 
   const boosts = filenames.map(async filename => {
