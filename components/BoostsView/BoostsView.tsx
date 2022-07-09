@@ -24,7 +24,14 @@ export default function BoostsView({ boosts }: BoostsViewProps) {
   }, [filteredBoosts, input])
 
   const categories = useMemo(() => {
-    return [...new Set(searchResults.map(boost => boost.website))]
+    // return [...new Set(searchResults.map(boost => boost.website))]
+
+    const answer: string[] = []
+    new Set(searchResults.map(boost => boost.website)).forEach(category => {
+      answer.push(category)
+    })
+
+    return answer
   }, [searchResults])
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -50,7 +57,7 @@ export default function BoostsView({ boosts }: BoostsViewProps) {
       {/* sidebar */}
       <div
         // className='flex flex-col flex-shrink-0 sticky mr-8'
-        className='flex flex-col top-20 flex-shrink-0 sticky mr-8 h-screen top-navbar'
+        className='flex flex-col top-20 flex-shrink-0 sticky mr-2 xs:mr-4 sm:mr-6 md:mr-8 h-screen top-navbar'
         style={{ height: 'fit-content' }}
       >
         <form
@@ -65,12 +72,12 @@ export default function BoostsView({ boosts }: BoostsViewProps) {
             value={input}
             ref={inputRef}
             className={cn(
-              'bg-gray-50 dark:bg-gray-800 text-primary block w-full pl-10 py-2 text-sm rounded-md',
+              'bg-gray-50 dark:bg-gray-800 w-36 sm:w-44 md:w-full text-primary block pl-10 py-2 text-sm rounded-md',
               'border border-gray-200 dark:border-gray-700',
               'pr-0 md:pr-12',
               'focus:outline  focus:ring-blue-300 dark:focus:ring-blue-700 focus:ring-4 focus:outline-2 focus:outline-blue-500'
             )}
-            placeholder='Search for boosts...'
+            placeholder='Search...'
             aria-label='Search for boosts'
             onChange={handleChange}
             spellCheck={false}
@@ -104,7 +111,7 @@ export default function BoostsView({ boosts }: BoostsViewProps) {
           <div key={index}>
             <h3
               id={category}
-              className='py-2 pl-2  font-semibold filter-blur-small sticky top-[68px] z-[2] text-2xl lg:text-3xl'
+              className='py-2 pl-2 font-semibold filter-blur-small sticky top-[68px] z-[2] text-2xl lg:text-3x mt-4'
             >
               {category}
             </h3>

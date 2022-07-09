@@ -14,7 +14,7 @@ export default function Card({
   return (
     <div
       onClick={() => window.open(github, '_blank')}
-      className='w-96 cursor-pointer bg-gray-100 group hover:bg-gray-200 border-black/10 dark:bg-gray-900 border dark:border-white/10 dark:hover:bg-gray-800 transition-all rounded-lg'
+      className='w-52 sm:w-64 md:w-72 lg:w-72 xl:w-96 cursor-pointer bg-gray-100 group hover:bg-gray-200 border-black/10 dark:bg-gray-900 border dark:border-white/10 dark:hover:bg-gray-800 transition-all rounded-lg'
     >
       <div className='h-48 w-full  relative'>
         <Image
