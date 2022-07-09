@@ -3,9 +3,10 @@
 ## Checklist before requesting a merge
 
 <!--- Copy the folder by going into /Users/*/Library/Applications/Arc/boosts/
-      Or by going into the Menu Bar -> Extensions -> Manage Extensions -> Details -> Source----->
-
-- [ ] I have copied the extension folder into the data/extensions
+      Or by going into the Menu Bar -> Extensions -> Manage Extensions -> Details -> Source
+      Then zip it (Right Click -> Compress)
+----->
+- [ ] I have copied the extension zip file into the public/extensions folder
 <!-- Check the README.md in order to get the JSON template file and understand how to modify it. -->
 - [ ] I have created a new JSON file in the data/manifest folder, with the extensions' id
 - [ ] I have filled all the blank lines in the JSON file
