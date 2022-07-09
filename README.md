@@ -1,100 +1,51 @@
-# Ultimate Front-end Template
+# Arc Boost Marketplace
 
-![preview](https://cdn.discordapp.com/attachments/797485737272541250/952208625806495815/image_5.png)
+This is the Unofficial Marketplace for Arc Boosts.
 
-> Most elements are taken from [my website](https://cretu.dev).
+1. [Contributing](#contributing)
+2. [Running](#running)
+3. [License](#license)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcristicretu%2Fts-next-tailwind-template)
+## Contributing
 
-## Ingredients ✨:
+In order to extend this marketplace, all contributions are welcome.
 
-- NextJS 🚀
-- TailwindCSS 🦄
-- Typescript 🦺
-- Dark Mode Support 🌓
-- ESLint + Prettier Config 📂
-- Husky 🐶
-- Self-Hosted Inter Font ␊
+### Step 0
 
-Under the _components_ folder, use Container for each of your pages - as it provides a reusable starting point for every page.
+Fork this repository and create a new branch.
 
-```jsx
-<Container>...pageElements</Container>
-```
+### Step 1
 
-## Getting started
+Grab your boost (extension) from Arc. There are two main ways to do that:
 
-1. With 'use as template' repository
-   ![preview](https://cdn.discordapp.com/attachments/797485737272541250/952208604386189332/Group_11.png)
+1. From the Boost editor
+> Click on the title or settings icon on the top-left, and then click `Open in Finder` in the modal
+![CleanShot 2022-07-09 at 4 14 18](https://user-images.githubusercontent.com/45521157/178107343-6f12ec7a-5cf1-49c0-a234-bf4b1450d613.png)
 
-2. Clone the project
+2. From the extensions tab
+> Menu Bar -> Extensions -> Manage Extensions -> Click on your extensions' details -> Source
 
-```bash
-# http
-git clone https://github.com/cristicretu/ts-next-tailwind-template.git
-```
+Now switch to your branch and add the whole folder you just got into the `data/extensions` folder.
 
-```bash
-# ssh
-git clone git@github.com:cristicretu/ts-next-tailwind-template.git
-```
+### Step 2
 
-3. With `create-next-app`
+Create a manifest JSON file for your extension. This will be used for preview purposes on the main website.
+Get the template from [here](), and then fill our all the properties.
+For the image, either paste it into the PR or somewhere else into GitHub, but *make sure* that the image link is `https://user-images.githubusercontent.com/...`. (i.e hosted on GitHub)
 
-```bash
-npx create-next-app -e https://github.com/cristicretu/ts-next-tailwind-template project-name
-```
+Now change the name of this file into the name of your boost. This will be used in the website. (i.e retro-github -> Retro Github)
 
-Install the required packages and run the template
+### Step 3 
+
+Submit the PR
+
+## Running
 
 ```bash
-cd project-name
-yarn install
+git clone git@github.com:cristicretu/arcboost-marketplace.git
+cd arcboost-marketplace && yarn # or npm -i
+yarn dev # or npm run dev
 ```
 
-## Included
-
-### Custom classNames function
-
-> Under `/lib/classNames`
-
-### Packages
-
-1. Next-themes: An abstraction for themes in your Next.js app.
-2. react-use: react-hooks
-
-### Custom globals.css
-
-1. custom underline
-2. vercel navbar
-3. removes firefox, edge and ie. bugs with overflows
-
-### Absolute Imports
-
-```tsx
-import TextField from '../../../components/TextField.tsx'
-```
-
-changes to
-
-```tsx
-import TextField from 'components/TextField.tsx'
-```
-
-### SEO optimization found in `Container.tsx`
-
-### Folder structuring & organization
-
-> Under `/components/` & `/public/`
-
-### Self Hosted Inter Font
-
-> Under `/public/fonts/`
-
-### 404 Page
-
-### Favicons and more configs
-
-> Under `/public/static/favicons/`
-
-![preview](https://cdn.discordapp.com/attachments/797485737272541250/952211815046197278/Frame_7.png)
+## License
+[MIT](LICENSE) © [Cristian Crețu](https://github.com/cristicrtu)
