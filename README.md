@@ -10,7 +10,7 @@ This is the [Unofficial Marketplace](https://arcboost-marketplace.vercel.app/) f
 
 ## Downloading
 
-Just press on a card and it will be automatically downloaded. Unzip the file and add it to your path `/Users/*/Library/Applications/Arc/boosts/`, and you're done ✨
+Just press on a card and it will be automatically downloaded. Unzip the file and add it to your path `/Users/*/Library/Application Support/Arc/boosts`, and you're done ✨
 
 If you have any issues, make sure the extension is enabled through the `Manage extensions` page. 
 
