@@ -52,13 +52,16 @@ export const getStaticProps: GetStaticProps = async function () {
     // add the id to the manifest as a object property
     const manifestObject: Boost = JSON.parse(manifest)
     manifestObject.name = name
-    manifestObject.website = manifestObject.website.substring(
-      0,
-      manifestObject.website.lastIndexOf('.')
-    )
-    manifestObject.website =
-      manifestObject.website.charAt(0).toUpperCase() +
-      manifestObject.website.slice(1)
+
+    if (manifestObject.website !== 'Any') {
+      manifestObject.website = manifestObject.website.substring(
+        0,
+        manifestObject.website.lastIndexOf('.')
+      )
+      manifestObject.website =
+        manifestObject.website.charAt(0).toUpperCase() +
+        manifestObject.website.slice(1)
+    }
 
     return manifestObject
   })
